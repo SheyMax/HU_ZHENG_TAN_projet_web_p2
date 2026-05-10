@@ -2,8 +2,8 @@
    VARIABLES ET CONFIGURATION GLOBALE
    ========================================================================== */
 :root {
-    --primary-color: #00475b;    /* Bleu EFREI */
-    --secondary-color: #00a8e8;  /* Bleu clair accent */
+    --primary-color: #0A316C;    /* Bleu EFREI de la charte graphique */
+    --secondary-color: #00a8e8;  /* Bleu clair */
     --text-color: #333333;
     --bg-light: #f4f7f6;
     --white: #ffffff;
