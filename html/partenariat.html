@@ -7,33 +7,53 @@
 </head>
 <body>
     <header>
-        <h1>EFREI Paris</h1>
-        <nav>
-            <ul>
-                <li><a href="accueil.html">Accueil</a></li>
-                <li><a href="formation.html">Formation</a></li>
-                <li><a href="enseignant_recherche.html">Enseignement & Recherche</a></li>
-                <li><a href="vie_etudiante.html">Vie étudiante</a></li>
-                <li><a href="partenariat.html">Partenariat</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <img src="../img/logo_efrei.png" alt="Logo EFREI Paris" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="formation.html">Formation</a></li>
+                    <li><a href="enseignant_recherche.html">Enseignement</a></li>
+                    <li><a href="vie_etudiante.html">Vie étudiante</a></li>
+                    <li><a href="partenariat.html" class="active">Nos partenaires</a></li>
+                    <li><a href="contact.html">Contact / À propos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>Nos partenaires</h2>
-            <article>
-                <h3>Jean Informatique</h3>
-                <p>Responsable de la Majeure Software Engineering.</p>
-            </article>
-            <article>
-                <h3>Marie Data</h3>
-                <p>Spécialiste en Machine Learning et Big Data.</p>
-            </article>
-        </section>
-    </main>
+<main>
+    <section>
+        <h2>Nos Partenariats Entreprises</h2>
+        <p>L'EFREI collabore avec plus de 1000 entreprises pour l'insertion de ses diplômés.</p>
+        <div class="grid">
+            <div class="card"><h4>Grands Groupes</h4><p>Capgemini, Thales, Orange, Sopra Steria.</p></div>
+            <div class="card"><h4>Startup & Innovation</h4><p>Partenariats avec Station F et l'incubateur Efrei Entrepreneurs.</p></div>
+            <div class="card"><h4>International</h4><p>85+ universités partenaires à travers le monde.</p></div>
+        </div>
+    </section>
 
-    <footer><p>&copy; 2026 EFREI Paris</p></footer>
+    <section id="logos-partenaires">
+    <h3>Nos Entreprises Partenaires</h3>
+    <div class="logo-container">
+        <img src="../img/logo_capgemini.png" alt="Capgemini" class="partner-logo">
+        <img src="../img/logo_thales.png" alt="Thales" class="partner-logo">
+        <img src="../img/logo_orange.png" alt="Orange" class="partner-logo">
+        <img src="../img/logo_sopra.png" alt="Sopra Steria" class="partner-logo">
+        <img src="../img/logo_microsoft.png" alt="Microsoft" class="partner-logo">
+        <img src="../img/logo_sg.png" alt="Societé Générale" class="partner-logo">
+    </div>
+</section>
+</main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 EFREI Paris - Projet TI402</p>
+            <nav class="footer-nav">
+                <a href="accueil.html">Accueil</a> | 
+                <a href="contact.html">À propos de nous</a>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>
