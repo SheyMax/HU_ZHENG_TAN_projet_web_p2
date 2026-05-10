@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & À Propos | Département Info EFREI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="../img/logo_efrei.png" alt="Logo EFREI Paris" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="formation.html">Formation</a></li>
+                    <li><a href="enseignant_recherche.html">Enseignement</a></li>
+                    <li><a href="vie_etudiante.html">Vie étudiante</a></li>
+                    <li><a href="contact.html" class="active">Contact / À propos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact-form">
+            <h2>Nous contacter</h2>
+            <p>Une question sur le département ? Remplissez le formulaire ci-dessous.</p>
+            
+            <form id="main-contact-form">
+                <div class="form-group">
+                    <label for="nom">Nom complet</label>
+                    <input type="text" id="nom" name="nom" placeholder="Ex: Jean Dupont" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="nom@exemple.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="sujet">Sujet</label>
+                    <select id="sujet" name="sujet">
+                        <option value="admission">Admissions</option>
+                        <option value="partenariat">Partenariat</option>
+                        <option value="autre">Autre demande</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Envoyer le message</button>
+            </form>
+        </section>
+
+        <section id="a-propos">
+            <h2>À propos de ce projet</h2>
+            <p>Ce site a été réalisé dans le cadre du module <strong>TI402 - Programmation Web</strong>.</p>
+            
+            <div class="equipe-projet">
+                <h3>L'équipe</h3>
+                <ul>
+                    <li><strong>Membre 1 :</strong> Hu Maxime</li>
+                    <li><strong>Membre 2 :</strong> Tan Logan</li>
+                    <li><strong>Membre 3 :</strong> Zheng Junjie</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="map">
+            <h2>Localisation</h2>
+            <div class="map-container">
+                <p><strong>Campus EFREI Paris</strong><br>
+                30-32 Avenue de la République,<br>
+                94800 Villejuif, France</p>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 EFREI Paris - Projet TI402</p>
+            <nav class="footer-nav">
+                <a href="accueil.html">Accueil</a> | 
+                <a href="contact.html">À propos de nous</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
