@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Site de l'EFREI chargé !");
 
-    // 1. Interactivité : Menu de navigation actif dynamique
+    // Menu de navigation actif dynamique
     const currentLocation = location.href;
     const menuItems = document.querySelectorAll('nav ul li a');
     menuItems.forEach(item => {
@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 2. Validation de Formulaire (Page Contact)
+    // Validation de Formulaire (Page Contact)
     const contactForm = document.getElementById('main-contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // Empêche l'envoi par défaut (Vu en cours)
+            event.preventDefault(); // Empêche l'envoi par défaut
             
             let isValid = true;
             const email = document.getElementById('email');
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (isValid) {
-                // Simulation d'envoi asynchrone (Fetch concept)
+                // Simulation d'envoi asynchrone
                 const btn = this.querySelector('button');
                 btn.textContent = "Envoi en cours...";
                 btn.disabled = true;
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 3. Animation au scroll (Interactivité avancée)
+    // 3. Animation au scroll
     const sections = document.querySelectorAll('section');
     const observerOptions = { threshold: 0.1 };
 

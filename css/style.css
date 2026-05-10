@@ -108,21 +108,21 @@ h2 {
 }
 
 /* ==========================================================================
-   SECTION HERO (ACCUEIL) - MISE À JOUR ESPACEMENTS
+   SECTION HERO (ACCUEIL)
    ========================================================================== */
 #hero-accueil {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 5rem 2rem; /* Plus de hauteur pour le hero */
-    background-color: #003646; /* Bleu légèrement plus sombre pour le contraste */
+    padding: 5rem 2rem; /* Plus de hauteur */
+    background-color: #003646;
     color: var(--white);
 }
 
 #hero-accueil h2 {
     color: var(--white);
-    border-left: none; /* Titre centré sans bordure latérale */
+    border-left: none; /* Titre centré sans bordure sur les côtés */
     padding-left: 0;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
@@ -131,7 +131,7 @@ h2 {
 #hero-accueil .intro p {
     font-size: 1.2rem;
     max-width: 800px;
-    margin: 0 auto 2.5rem auto; /* Le 2.5rem crée l'espace entre texte et bouton */
+    margin: 0 auto 2.5rem auto; /* Crée un espace entre texte et bouton */
 }
 
 #hero-accueil button {
@@ -284,7 +284,7 @@ footer {
 }
 
 .stat-card h3 {
-    font-size: 3rem;               /* Chiffres bien gros pour l'impact */
+    font-size: 3rem;               /* Chiffres bien gros */
     color: var(--secondary-color);
     margin-bottom: 0.5rem;         /* Espace réduit avec le texte du dessous */
     font-weight: 700;
@@ -294,10 +294,9 @@ footer {
     font-size: 1.1rem;
     color: var(--primary-color);
     font-weight: 500;
-    margin: 0;                     /* Supprime les marges par défaut */
+    margin: 0;
 }
 
-/* Version Mobile */
 @media (max-width: 768px) {
     .stats {
         flex-direction: column;    /* Aligne les stats les unes sous les autres */
@@ -306,20 +305,20 @@ footer {
 }
 
 /* ==========================================================================
-   DETAILS
+   DETAILS (LISTE)
    ========================================================================== */
 
 ul {
     list-style-position: inside; /* Force la puce à être à l'intérieur du bloc de texte */
     padding-left: 0;             /* Supprime le retrait par défaut du navigateur */
-    margin-left: 15px;           /* Aligne le texte sur la même ligne que vos H2 (qui ont 15px de padding) */
+    margin-left: 15px;           /* Aligne le texte sur la même ligne que H2 */
 }
 
 /* ==========================================================================
    FORMULAIRES (DESIGN MODERNE ET ÉPURÉ)
    ========================================================================== */
 
-/* Conteneur du formulaire pour lui donner une largeur plus élégante */
+/* Conteneur du formulaire pour lui donner une largeur appropriée */
 #main-contact-form {
     max-width: 700px;
     margin: 2rem 0;
@@ -331,7 +330,7 @@ ul {
     flex-direction: column;
 }
 
-/* Style des labels : plus petits, gris foncé et en gras pour le côté pro */
+/* Style des labels : plus petits, gris foncé et en gras */
 .form-group label {
     font-size: 0.85rem;
     font-weight: 700;
@@ -359,16 +358,16 @@ input:hover, select:hover, textarea:hover {
     border-color: #999;
 }
 
-/* Effet de focus (quand on clique dedans) : signature "Ingénieur" */
+/* Effet quand on clique dedans */
 input:focus, select:focus, textarea:focus {
     outline: none;
     border-color: var(--secondary-color);
     background-color: #fff;
-    /* Ajoute un léger halo bleu pour le confort visuel */
+    /* Ajoute un halo bleu */
     box-shadow: 0 0 0 4px rgba(0, 168, 232, 0.1);
 }
 
-/* Style spécifique pour le bouton d'envoi */
+/* Style pour le bouton d'envoi */
 .btn-submit {
     background-color: var(--primary-color);
     color: white;
@@ -380,7 +379,7 @@ input:focus, select:focus, textarea:focus {
     cursor: pointer;
     transition: all 0.3s ease;
     display: inline-block;
-    width: auto; /* Ne prend pas toute la largeur pour un look plus pro */
+    width: auto; /* Ne prend pas toute la largeur */
 }
 
 .btn-submit:hover {
@@ -396,7 +395,7 @@ textarea {
 }
 
 /* ==========================================================================
-   SECTION À PROPOS (VERSION SIMPLE)
+   SECTION À PROPOS
    ========================================================================== */
 
 .equipe-cadre {
@@ -439,7 +438,7 @@ textarea {
 
    .map-layout {
     display: flex;
-    flex-direction: column; /* Empilé par défaut */
+    flex-direction: column;
     gap: 20px;
     background: #f8f9fa;
     padding: 20px;
@@ -451,14 +450,13 @@ textarea {
     width: 100%;
     overflow: hidden;
     border-radius: 6px;
-    line-height: 0; /* Supprime l'espace sous l'iframe */
+    line-height: 0;
 }
 
 .map-info p {
     margin-bottom: 10px;
 }
 
-/* Sur écran large, on met l'adresse à gauche et la carte à droite */
 @media (min-width: 768px) {
     .map-layout {
         flex-direction: row;
