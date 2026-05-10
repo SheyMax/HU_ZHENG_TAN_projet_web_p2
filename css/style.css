@@ -260,3 +260,216 @@ footer {
     main { margin: 0; border-radius: 0; }
     #hero-accueil h2 { font-size: 1.8rem; }
 }
+
+/* ==========================================================================
+   SECTION STATISTIQUES (ACCUEIL)
+   ========================================================================== */
+.stats {
+    display: flex;
+    justify-content: space-around; /* Répartit les cartes uniformément */
+    flex-wrap: wrap;               /* Permet de passer à la ligne sur mobile */
+    gap: 2rem;
+    padding: 4rem 2rem;
+    background-color: var(--white);
+    text-align: center;            /* Centre tout le texte par défaut */
+}
+
+.stat-card {
+    flex: 1;                       /* Donne la même largeur à chaque carte */
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;        /* Aligne le H3 au-dessus du P */
+    align-items: center;           /* Centre horizontalement dans la colonne */
+    justify-content: center;       /* Centre verticalement */
+}
+
+.stat-card h3 {
+    font-size: 3rem;               /* Chiffres bien gros pour l'impact */
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;         /* Espace réduit avec le texte du dessous */
+    font-weight: 700;
+}
+
+.stat-card p {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin: 0;                     /* Supprime les marges par défaut */
+}
+
+/* Version Mobile */
+@media (max-width: 768px) {
+    .stats {
+        flex-direction: column;    /* Aligne les stats les unes sous les autres */
+        gap: 3rem;
+    }
+}
+
+/* ==========================================================================
+   DETAILS
+   ========================================================================== */
+
+ul {
+    list-style-position: inside; /* Force la puce à être à l'intérieur du bloc de texte */
+    padding-left: 0;             /* Supprime le retrait par défaut du navigateur */
+    margin-left: 15px;           /* Aligne le texte sur la même ligne que vos H2 (qui ont 15px de padding) */
+}
+
+/* ==========================================================================
+   FORMULAIRES (DESIGN MODERNE ET ÉPURÉ)
+   ========================================================================== */
+
+/* Conteneur du formulaire pour lui donner une largeur plus élégante */
+#main-contact-form {
+    max-width: 700px;
+    margin: 2rem 0;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style des labels : plus petits, gris foncé et en gras pour le côté pro */
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Style des champs de saisie */
+input, select, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Effet au survol des champs */
+input:hover, select:hover, textarea:hover {
+    border-color: #999;
+}
+
+/* Effet de focus (quand on clique dedans) : signature "Ingénieur" */
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    background-color: #fff;
+    /* Ajoute un léger halo bleu pour le confort visuel */
+    box-shadow: 0 0 0 4px rgba(0, 168, 232, 0.1);
+}
+
+/* Style spécifique pour le bouton d'envoi */
+.btn-submit {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    width: auto; /* Ne prend pas toute la largeur pour un look plus pro */
+}
+
+.btn-submit:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px); /* Petit effet de levée au survol */
+    box-shadow: 0 4px 12px rgba(0, 168, 232, 0.3);
+}
+
+/* Style pour le texte de zone de message (textarea) */
+textarea {
+    resize: vertical; /* Permet à l'utilisateur de l'agrandir seulement en hauteur */
+    min-height: 120px;
+}
+
+/* ==========================================================================
+   SECTION À PROPOS (VERSION SIMPLE)
+   ========================================================================== */
+
+.equipe-cadre {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background-color: #fcfcfc; /* Un gris très léger pour détacher la zone */
+    border-radius: 4px;
+    border: 1px solid #eee;
+}
+
+.equipe-cadre h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.equipe-cadre ul {
+    list-style: none; /* On enlève les points */
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.equipe-cadre li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0; /* Une ligne fine entre les membres */
+    color: var(--text-color);
+}
+
+.equipe-cadre li:last-child {
+    border-bottom: none; /* Pas de ligne pour le dernier */
+}
+
+.equipe-cadre li strong {
+    color: var(--primary-color);
+}
+
+/* ==========================================================================
+   LOCALISATION
+   ========================================================================== */
+
+   .map-layout {
+    display: flex;
+    flex-direction: column; /* Empilé par défaut */
+    gap: 20px;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.map-canvas {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+    line-height: 0; /* Supprime l'espace sous l'iframe */
+}
+
+.map-info p {
+    margin-bottom: 10px;
+}
+
+/* Sur écran large, on met l'adresse à gauche et la carte à droite */
+@media (min-width: 768px) {
+    .map-layout {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .map-info {
+        flex: 1;
+    }
+    
+    .map-canvas {
+        flex: 2;
+    }
+}
